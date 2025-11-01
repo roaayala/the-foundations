@@ -1,3 +1,14 @@
-h1 {
+/* type selector */
+p {
 	color: red;
+}
+
+/* class selector */
+.second-paragraph {
+	color: purple;
+}
+
+/* id selector */
+#third-paragraph {
+	color: green;
 }
