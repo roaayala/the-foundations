@@ -6,20 +6,38 @@
 		<title>Class & ID Selectors</title>
 		<style>
 			.common-class {
+				font-family: serif;
 			}
 
-			.common-class:nth-of-type(odd) {
+			.common-class:nth-child(odd) {
 				background-color: rgb(255, 144, 144);
 				font-family: sans-serif;
+			}
+
+			.bigger {
+				font-size: 24px;
+			}
+
+			#first {
+				color: rgb(137, 137, 252);
+				font-size: 36px;
+			}
+
+			#second {
+				background-color: rgb(63, 255, 63);
+				font-weight: bold;
+				font-size: 24px;
 			}
 		</style>
 	</head>
 	<body>
 		<h1>Class & ID Selectors</h1>
-		<p class="common-class">1 - I'm a class!</p>
-		<p class="common-class" id="first">2 - I'm one ID.</p>
-		<p class="common-class">3 - I'm a class, but cooler!</p>
-		<p class="common-class" id="second">4 - I'm another ID.</p>
-		<p class="common-class">5 - I'm a class!</p>
+		<div class="wrapper">
+			<p class="common-class">1 - I'm a class!</p>
+			<div id="first">2 - I'm one ID.</div>
+			<p class="common-class bigger">3 - I'm a class, but cooler!</p>
+			<div id="second">4 - I'm another ID.</div>
+			<p class="common-class">5 - I'm a class!</p>
+		</div>
 	</body>
 </html>
