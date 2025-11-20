@@ -4,14 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Class & ID Selectors</title>
-		<style></style>
+		<style>
+			.common-class {
+			}
+
+			.common-class:nth-of-type(odd) {
+				background-color: rgb(255, 144, 144);
+				font-family: sans-serif;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>Class & ID Selectors</h1>
-		<p>1 - I'm a class!</p>
-		<p>2 - I'm one ID.</p>
-		<p>3 - I'm a class, but cooler!</p>
-		<p>4 - I'm another ID.</p>
-		<p>5 - I'm a class!</p>
+		<p class="common-class">1 - I'm a class!</p>
+		<p class="common-class" id="first">2 - I'm one ID.</p>
+		<p class="common-class">3 - I'm a class, but cooler!</p>
+		<p class="common-class" id="second">4 - I'm another ID.</p>
+		<p class="common-class">5 - I'm a class!</p>
 	</body>
 </html>
