@@ -1,3 +1,10 @@
 * {
-	outline: 2px solid red;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+p {
+	padding: 1rem;
+	background-color: rgb(199, 199, 199);
+	border: 5px solid black;
 }
