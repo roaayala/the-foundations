@@ -1,0 +1,17 @@
+.container {
+	background-color: salmon;
+	padding: 16px;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	flex-direction: row;
+}
+
+.item {
+	background-color: aqua;
+	border: 1px solid black;
+	text-align: center;
+	padding: 16px;
+	flex-grow: 1;
+}
