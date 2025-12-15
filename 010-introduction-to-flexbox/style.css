@@ -13,5 +13,13 @@
 	border: 1px solid black;
 	text-align: center;
 	padding: 16px;
-	flex-grow: 1;
+	width: 100px;
+}
+
+.item.two {
+	flex-grow: 2;
+}
+
+.item.three {
+	flex-shrink: 0;
 }
