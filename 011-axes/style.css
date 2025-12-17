@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+	gap: 16px;
+
+	flex-direction: row;
+	flex-direction: column;
+}
+
+.item {
+	background-color: salmon;
+	border: 4px solid black;
+	height: 100px;
+	flex: 1 1 auto;
+}
