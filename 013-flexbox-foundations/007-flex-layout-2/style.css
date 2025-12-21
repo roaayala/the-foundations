@@ -12,6 +12,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 .header {
@@ -29,6 +30,25 @@ h1 {
 
 .main {
 	display: flex;
+	flex-grow: 1;
+}
+
+.sidebar {
+	padding: 16px;
+	min-width: 300px;
+	flex-shrink: 1;
+	background: royalblue;
+	box-sizing: border-box;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+li {
+	list-style: none;
 }
 
 .footer {
@@ -37,14 +57,25 @@ h1 {
 	color: darkmagenta;
 }
 
-.sidebar {
-	width: 300px;
-	background: royalblue;
-	box-sizing: border-box;
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.content {
+	padding: 48px;
+	display: flex;
+	gap: 16px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card {
 	border: 1px solid #eee;
 	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
 	border-radius: 4px;
+	padding: 16px;
+	flex-basis: 300px;
 }
