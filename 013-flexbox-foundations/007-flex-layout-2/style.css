@@ -79,3 +79,9 @@ a {
 	padding: 16px;
 	flex-basis: 300px;
 }
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
