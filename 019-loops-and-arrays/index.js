@@ -17,7 +17,7 @@ let favoriteItems = 'My favorite items are ';
 for (const item of items) {
 	favoriteItems = favoriteItems + ` ${item},`;
 }
-console.log(favoriteItems);
+// console.log(favoriteItems);
 
 let newFavoriteItems = 'My favorite items are ';
 for (let i = 0; i < items.length; i++) {
@@ -25,7 +25,7 @@ for (let i = 0; i < items.length; i++) {
 		newFavoriteItems = newFavoriteItems + ` ${items[i]}.`;
 	else newFavoriteItems = newFavoriteItems + ` ${items[i]},`;
 }
-console.log(newFavoriteItems);
+// console.log(newFavoriteItems);
 
 // map
 function toUpper(x) {
@@ -40,3 +40,31 @@ function filterRule(x, y) {
 }
 const filteredItems = items.filter((item) => filterRule(item, 'p'));
 // console.log(filteredItems);
+
+// LOOPS from javascript.info
+// last loop value
+// let i = 3;
+
+// while (i) {
+// alert(i--);
+// }
+// 1, because 0 is falsy value in js
+
+// output even numbers
+// for (let i = 0; i <= 10; i++) {
+// 	if (i % 2 === 0) console.log(i);
+// }
+
+// convert for to while
+// let i = 0;
+// while (i < 3) {
+// 	console.log(i);
+// 	i++;
+// }
+
+// repeat until the input is correct
+let num;
+
+do {
+	num = prompt('Enter number greater than 100!', 0);
+} while (num <= 100 && num);
