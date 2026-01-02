@@ -70,17 +70,17 @@ const filteredItems = items.filter((item) => filterRule(item, 'p'));
 // } while (num <= 100 && num);
 
 // output prime numbers
-const n = 100;
-function filterPrime(n) {
-	let prime = '';
-	for (let i = 1; i < n; i++) {
-		if (i === 1) {
-			continue;
-		} else {
-			if (i % i === 0) prime = prime + `${i} `;
+function isPrime(number) {
+	for (let i = 2; i < number; i++) {
+		if (number % i === 0) {
+			return false;
 		}
 	}
-	return prime;
+	return true;
 }
-
-console.log(filterPrime(n));
+const n = 100;
+for (let i = 2; i <= n; i++) {
+	if (isPrime(i)) {
+		console.log(i);
+	}
+}
