@@ -11,3 +11,9 @@ let arr = [1, 2, 3, 4];
 
 // arr.splice(-1, 0, 5, 6); // start last index, dont remove anything and replace with following items
 // console.log(arr);
+
+// slice
+// console.log(arr.slice(2, 4)); // extract item from after index 2 to index 4
+// console.log(arr.slice(-1));
+
+// concat
