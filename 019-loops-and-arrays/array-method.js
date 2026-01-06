@@ -17,3 +17,8 @@ let arr = [1, 2, 3, 4];
 // console.log(arr.slice(-1));
 
 // concat
+
+// forEach
+arr.forEach((item, index, array) => {
+	console.log(`${item} is at index ${index} in ${array}`);
+});
