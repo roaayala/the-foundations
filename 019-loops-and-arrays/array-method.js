@@ -1,0 +1,13 @@
+// splice: delete an item from the array an return deleted item
+let arr = [1, 2, 3, 4];
+// arr.splice(1, 1); // start at index 1, and remove just one item
+// console.log(arr);
+
+// arr.splice(0, 3, 4, 5); // start at index 0, remove three items, and replace with following items
+// console.log(arr);
+
+// arr.splice(2, 0, 5, 6); // start index from 2, dont remove anything, and replace with following items
+// console.log(arr);
+
+// arr.splice(-1, 0, 5, 6); // start last index, dont remove anything and replace with following items
+// console.log(arr);

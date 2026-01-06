@@ -59,4 +59,4 @@ function sumInput() {
 
 	return total;
 }
-console.log(sumInput());
+// console.log(sumInput());
