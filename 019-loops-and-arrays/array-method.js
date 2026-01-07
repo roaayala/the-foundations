@@ -1,5 +1,5 @@
 // splice: delete an item from the array an return deleted item
-let arr = [1, 2, 3, 4];
+let arr = [1, 2, 3, 4, 1];
 // arr.splice(1, 1); // start at index 1, and remove just one item
 // console.log(arr);
 
@@ -19,6 +19,14 @@ let arr = [1, 2, 3, 4];
 // concat
 
 // forEach
-arr.forEach((item, index, array) => {
-	console.log(`${item} is at index ${index} in ${array}`);
-});
+// arr.forEach((item, index, array) => {
+// 	console.log(`${item} is at index ${index} in ${array}`);
+// });
+
+// indexOf/lastIndexOf and includes
+console.log(arr.indexOf(1));
+console.log(arr.indexOf(6));
+console.log(arr.includes(1));
+console.log(arr.includes(6));
+console.log(arr.indexOf(1));
+console.log(arr.lastIndexOf(1));
