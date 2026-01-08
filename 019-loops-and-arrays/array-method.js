@@ -59,3 +59,27 @@
 // const result = users.filter((item, index, array) => {});
 // const filterUsers = users.filter((item) => item.id < 10);
 // console.log(filterUsers);
+
+// // map: do transformation to all items of array and return the results
+// const users = ['ahmad', 'roaayala', 'rizky', 'bandhang'];
+// // const result = users.map((item, index, array) => {});
+// console.log(users.map((item) => item.length));
+
+// // sort: mutate the array, and sorts the array items and changingn its element order
+// const numbers = [1, 100, 234, 8];
+// function numberComparation(x, y) {
+// 	const a = Number(x);
+// 	const b = Number(y);
+
+// 	if (a > b) return 1;
+// 	if (a === b) return 0;
+// 	if (a < b) return -1;
+// }
+
+// // console.log(numbers.sort(numberComparation));
+// numbers.sort((a, b) => {
+// 	console.log(a + '-' + b);
+
+// 	return a - b;
+// });
+// console.log(numbers);
