@@ -31,7 +31,7 @@
 // console.log(arr.indexOf(1));
 // console.log(arr.lastIndexOf(1));
 
-// find, findIndex and findLastIndex
+// find, findIndex and findLastIndex: return item of matching condition
 // const users = [
 // 	{ id: 1, name: 'john' },
 // 	{ id: 2, name: 'pete' },
@@ -50,9 +50,12 @@
 // console.log(users.findIndex((user) => user.name === 'john'));
 // console.log(users.findLastIndex((user) => user.name === 'john'));
 
-// filter
-const users = [
-	{ id: 1, name: 'john' },
-	{ id: 2, name: 'pete' },
-	{ id: 3, name: 'mary' },
-];
+// filter: return array of matching conditions
+// const users = [
+// 	{ id: 1, name: 'john' },
+// 	{ id: 2, name: 'pete' },
+// 	{ id: 3, name: 'mary' },
+// ];
+// const result = users.filter((item, index, array) => {});
+// const filterUsers = users.filter((item) => item.id < 10);
+// console.log(filterUsers);
