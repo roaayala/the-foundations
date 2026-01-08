@@ -1,5 +1,5 @@
 // splice: delete an item from the array an return deleted item
-let arr = [1, 2, 3, 4, 1];
+// let arr = [1, 2, 3, 4, 1];
 // arr.splice(1, 1); // start at index 1, and remove just one item
 // console.log(arr);
 
@@ -24,9 +24,35 @@ let arr = [1, 2, 3, 4, 1];
 // });
 
 // indexOf/lastIndexOf and includes
-console.log(arr.indexOf(1));
-console.log(arr.indexOf(6));
-console.log(arr.includes(1));
-console.log(arr.includes(6));
-console.log(arr.indexOf(1));
-console.log(arr.lastIndexOf(1));
+// console.log(arr.indexOf(1));
+// console.log(arr.indexOf(6));
+// console.log(arr.includes(1));
+// console.log(arr.includes(6));
+// console.log(arr.indexOf(1));
+// console.log(arr.lastIndexOf(1));
+
+// find, findIndex and findLastIndex
+// const users = [
+// 	{ id: 1, name: 'john' },
+// 	{ id: 2, name: 'pete' },
+// 	{ id: 3, name: 'mary' },
+// 	{
+// 		id: 4,
+// 		name: 'john',
+// 	},
+// ];
+
+// const result = users.find((item, index, array) => {});
+
+// const user = users.find((item) => item.id === 2);
+// console.log(user);
+
+// console.log(users.findIndex((user) => user.name === 'john'));
+// console.log(users.findLastIndex((user) => user.name === 'john'));
+
+// filter
+const users = [
+	{ id: 1, name: 'john' },
+	{ id: 2, name: 'pete' },
+	{ id: 3, name: 'mary' },
+];
