@@ -83,3 +83,23 @@
 // 	return a - b;
 // });
 // console.log(numbers);
+
+// reverse
+// const users = ['ahmad', 'roaayala', 'rizky', 'bandhang'];
+// console.log(users.reverse());
+
+// split and join
+const users = 'Ahmad, Roaayala, Rizky, Bandhang';
+
+const arr = users.split(', ');
+console.log(arr);
+
+for (const user of arr) {
+	console.log(`Message to ${user}`);
+}
+
+const string = 'STRING';
+console.log(string.split(''));
+
+const user1 = ['ahmad', 'roaayala', 'rizky', 'bandhang'];
+console.log(user1.join(' '));
