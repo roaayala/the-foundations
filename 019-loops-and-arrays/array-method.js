@@ -115,3 +115,17 @@
 // const arr = [3, 4, 5, 6, 7];
 // const result = arr.reduce((sum, current) => sum + current, 0);
 // console.log(result);
+
+// task
+
+function camelize(string) {
+	// split to array
+	const stringToArray = string.split('');
+
+	// index of all "-"
+	const index = stringToArray.reduce((acc, current, index) => {});
+	// every char after "-" camelize it
+
+	// remove "-"
+}
+console.log(camelize('string-to-array'));
