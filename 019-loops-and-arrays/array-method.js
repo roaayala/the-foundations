@@ -89,17 +89,29 @@
 // console.log(users.reverse());
 
 // split and join
-const users = 'Ahmad, Roaayala, Rizky, Bandhang';
+// const users = 'Ahmad, Roaayala, Rizky, Bandhang';
 
-const arr = users.split(', ');
-console.log(arr);
+// const arr = users.split(', ');
+// console.log(arr);
 
-for (const user of arr) {
-	console.log(`Message to ${user}`);
-}
+// for (const user of arr) {
+// 	console.log(`Message to ${user}`);
+// }
 
-const string = 'STRING';
-console.log(string.split(''));
+// const string = 'STRING';
+// console.log(string.split(''));
 
-const user1 = ['ahmad', 'roaayala', 'rizky', 'bandhang'];
-console.log(user1.join(' '));
+// const user1 = ['ahmad', 'roaayala', 'rizky', 'bandhang'];
+// console.log(user1.join(' '));
+
+// reduce
+// const value = arr.reduce(
+// 	function (accumulator, item, index, array) {
+// 		// ...
+// 	},
+// 	[initial]
+// );
+
+// const arr = [3, 4, 5, 6, 7];
+// const result = arr.reduce((sum, current) => sum + current, 0);
+// console.log(result);
