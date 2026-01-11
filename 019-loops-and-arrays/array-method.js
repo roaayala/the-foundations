@@ -184,3 +184,32 @@
 //   // added brackets around the expression for better readability
 //   return arr.filter(item => (a <= item && item <= b));
 // }
+
+// task 3
+
+// my answer
+const arr = [5, 3, 8, 1, 4, 5, 2, 3];
+
+function filterRangeInPlace(arr, min, max) {
+	arr.forEach((item, index) => {
+		if (!(item >= min && item <= max)) {
+			arr.splice(index, 1);
+		}
+	});
+}
+
+filterRangeInPlace(arr, 1, 4);
+console.log(arr);
+
+// given answer
+function filterRangeInPlace(arr, a, b) {
+	for (let i = 0; i < arr.length; i++) {
+		let val = arr[i];
+
+		// remove if outside of the interval
+		if (val < a || val > b) {
+			arr.splice(i, 1);
+			i--;
+		}
+	}
+}
