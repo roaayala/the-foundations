@@ -118,48 +118,69 @@
 
 // task
 
+// // my answer
+// function camelize(string) {
+// 	// split to array
+// 	const stringToArray = string.split('');
+
+// 	// index of all "-"
+// 	const indexes = stringToArray.reduce((acc, current, index) => {
+// 		if (current === '-') {
+// 			acc.push(index);
+// 		}
+// 		return acc;
+// 	}, []);
+// 	console.log(indexes);
+
+// 	indexes.forEach((index) => {
+// 		// every char after "-" camelize it
+// 		if (stringToArray[index]) {
+// 			stringToArray[index + 1] = stringToArray[index + 1].toUpperCase();
+
+// 			// remove "-"
+// 			stringToArray[index] = '';
+// 		}
+// 	});
+
+// 	const result = stringToArray.join('');
+
+// 	return result;
+// }
+// console.log(camelize('string-to-array'));
+// console.log(camelize('background-color'));
+// console.log(camelize('list-style-image'));
+// console.log(camelize('-webkit-transition'));
+
+// // given answer
+// function camelized(str) {
+// 	return str
+// 		.split('-') // splits 'my-long-word' into array ['my', 'long', 'word']
+// 		.map(
+// 			// capitalizes first letters of all array items except the first one
+// 			// converts ['my', 'long', 'word'] into ['my', 'Long', 'Word']
+// 			(word, index) =>
+// 				index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+// 		)
+// 		.join(''); // joins ['my', 'Long', 'Word'] into 'myLongWord'
+// }
+
+// task 2
 // my answer
-function camelize(string) {
-	// split to array
-	const stringToArray = string.split('');
-
-	// index of all "-"
-	const indexes = stringToArray.reduce((acc, current, index) => {
-		if (current === '-') {
-			acc.push(index);
-		}
-		return acc;
-	}, []);
-	console.log(indexes);
-
-	indexes.forEach((index) => {
-		// every char after "-" camelize it
-		if (stringToArray[index]) {
-			stringToArray[index + 1] = stringToArray[index + 1].toUpperCase();
-
-			// remove "-"
-			stringToArray[index] = '';
-		}
-	});
-
-	const result = stringToArray.join('');
-
-	return result;
-}
-console.log(camelize('string-to-array'));
-console.log(camelize('background-color'));
-console.log(camelize('list-style-image'));
-console.log(camelize('-webkit-transition'));
+// const arr = [5, 3, 8, 1];
+// function filterRange(array, min, max) {
+// 	return array.reduce((acc, curr) => {
+// 		if (curr >= min && curr <= max) {
+// 			acc.push(curr);
+// 		}
+// 		return acc;
+// 	}, []);
+// }
+// const filtered = filterRange(arr, 1, 4);
+// console.log(arr);
+// console.log(filtered);
 
 // given answer
-function camelized(str) {
-	return str
-		.split('-') // splits 'my-long-word' into array ['my', 'long', 'word']
-		.map(
-			// capitalizes first letters of all array items except the first one
-			// converts ['my', 'long', 'word'] into ['my', 'Long', 'Word']
-			(word, index) =>
-				index == 0 ? word : word[0].toUpperCase() + word.slice(1)
-		)
-		.join(''); // joins ['my', 'Long', 'Word'] into 'myLongWord'
-}
+// function filterRange(arr, a, b) {
+//   // added brackets around the expression for better readability
+//   return arr.filter(item => (a <= item && item <= b));
+// }
