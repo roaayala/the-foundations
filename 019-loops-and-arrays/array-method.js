@@ -215,7 +215,24 @@
 // }
 
 // task 4
-const arr = [5, 2, 1, -10, 8];
-arr.sort((a, b) => b - a);
+// const arr = [5, 2, 1, -10, 8];
+// arr.sort((a, b) => b - a);
 
-console.log(arr);
+// console.log(arr);
+
+// task 5
+// my answer
+// const arr = ['HTML', 'JavaScript', 'CSS'];
+
+// function copySorted(arr) {
+// 	return arr.toSorted();
+// }
+// const sorted = copySorted(arr);
+
+// console.log(sorted); // CSS, HTML, JavaScript
+// console.log(arr); // HTML, JavaScript, CSS (no changes)
+
+// // given answer
+// function copySorted(arr) {
+// 	return arr.slice().sort();
+// }
