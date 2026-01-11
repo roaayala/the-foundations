@@ -118,14 +118,48 @@
 
 // task
 
+// my answer
 function camelize(string) {
 	// split to array
 	const stringToArray = string.split('');
 
 	// index of all "-"
-	const index = stringToArray.reduce((acc, current, index) => {});
-	// every char after "-" camelize it
+	const indexes = stringToArray.reduce((acc, current, index) => {
+		if (current === '-') {
+			acc.push(index);
+		}
+		return acc;
+	}, []);
+	console.log(indexes);
 
-	// remove "-"
+	indexes.forEach((index) => {
+		// every char after "-" camelize it
+		if (stringToArray[index]) {
+			stringToArray[index + 1] = stringToArray[index + 1].toUpperCase();
+
+			// remove "-"
+			stringToArray[index] = '';
+		}
+	});
+
+	const result = stringToArray.join('');
+
+	return result;
 }
 console.log(camelize('string-to-array'));
+console.log(camelize('background-color'));
+console.log(camelize('list-style-image'));
+console.log(camelize('-webkit-transition'));
+
+// given answer
+function camelized(str) {
+	return str
+		.split('-') // splits 'my-long-word' into array ['my', 'long', 'word']
+		.map(
+			// capitalizes first letters of all array items except the first one
+			// converts ['my', 'long', 'word'] into ['my', 'Long', 'Word']
+			(word, index) =>
+				index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+		)
+		.join(''); // joins ['my', 'Long', 'Word'] into 'myLongWord'
+}
