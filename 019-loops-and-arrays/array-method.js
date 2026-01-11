@@ -187,29 +187,35 @@
 
 // task 3
 
-// my answer
-const arr = [5, 3, 8, 1, 4, 5, 2, 3];
+// // my answer
+// const arr = [5, 3, 8, 1, 4, 5, 2, 3];
 
-function filterRangeInPlace(arr, min, max) {
-	arr.forEach((item, index) => {
-		if (!(item >= min && item <= max)) {
-			arr.splice(index, 1);
-		}
-	});
-}
+// function filterRangeInPlace(arr, min, max) {
+// 	arr.forEach((item, index) => {
+// 		if (!(item >= min && item <= max)) {
+// 			arr.splice(index, 1);
+// 		}
+// 	});
+// }
 
-filterRangeInPlace(arr, 1, 4);
+// filterRangeInPlace(arr, 1, 4);
+// console.log(arr);
+
+// // given answer
+// function filterRangeInPlace(arr, a, b) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		let val = arr[i];
+
+// 		// remove if outside of the interval
+// 		if (val < a || val > b) {
+// 			arr.splice(i, 1);
+// 			i--;
+// 		}
+// 	}
+// }
+
+// task 4
+const arr = [5, 2, 1, -10, 8];
+arr.sort((a, b) => b - a);
+
 console.log(arr);
-
-// given answer
-function filterRangeInPlace(arr, a, b) {
-	for (let i = 0; i < arr.length; i++) {
-		let val = arr[i];
-
-		// remove if outside of the interval
-		if (val < a || val > b) {
-			arr.splice(i, 1);
-			i--;
-		}
-	}
-}
