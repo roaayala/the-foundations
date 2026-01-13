@@ -248,15 +248,32 @@
 // console.log(names);
 
 // task 8
-const john = { name: 'John', surname: 'Smith', id: 1 };
-const pete = { name: 'Pete', surname: 'Hunt', id: 2 };
-const mary = { name: 'Mary', surname: 'Key', id: 3 };
+// const john = { name: 'John', surname: 'Smith', id: 1 };
+// const pete = { name: 'Pete', surname: 'Hunt', id: 2 };
+// const mary = { name: 'Mary', surname: 'Key', id: 3 };
 
-const users = [john, pete, mary];
+// const users = [john, pete, mary];
 
-const usersMapped = users.map((user) => {
-	return { fullName: `${user.name} ${user.surname}`, id: user.id };
-});
-console.log(usersMapped);
-console.log(usersMapped[0].id);
-console.log(usersMapped[0].fullName);
+// const usersMapped = users.map((user) => {
+// 	return { fullName: `${user.name} ${user.surname}`, id: user.id };
+// });
+// console.log(usersMapped);
+// console.log(usersMapped[0].id);
+// console.log(usersMapped[0].fullName);
+
+// task 9
+
+// function sortByAge(arr) {
+// 	arr.sort((a, b) => a.age - b.age);
+// }
+// const john = { name: 'John', age: 25 };
+// const pete = { name: 'Pete', age: 30 };
+// const mary = { name: 'Mary', age: 28 };
+
+// const arr = [pete, john, mary];
+
+// console.log(arr[0].name);
+// console.log(arr[1].name);
+// console.log(arr[2].name);
+
+// task 10
