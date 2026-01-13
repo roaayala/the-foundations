@@ -276,4 +276,35 @@
 // console.log(arr[1].name);
 // console.log(arr[2].name);
 
-// task 10
+// // task 11
+// // my answer
+// const john = { name: 'John', age: 25 };
+// const pete = { name: 'Pete', age: 30 };
+// const mary = { name: 'Mary', age: 29 };
+
+// const arr = [john, pete, mary];
+
+// function getAverageAge(arr) {
+// 	const averageAge = arr.reduce((accu, curr) => {
+// 		accu += curr.age;
+
+// 		return accu;
+// 	}, 0);
+
+// 	return averageAge / arr.length;
+// }
+
+// console.log(getAverageAge(arr));
+
+// // given asnwer
+// function getAverageAge(users) {
+// 	return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+// }
+
+// let john = { name: 'John', age: 25 };
+// let pete = { name: 'Pete', age: 30 };
+// let mary = { name: 'Mary', age: 29 };
+
+// let arr = [john, pete, mary];
+
+// alert(getAverageAge(arr));
