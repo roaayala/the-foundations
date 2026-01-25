@@ -14,4 +14,16 @@
 // const key = 'name';
 // console.log(user[key]); // handling dynamically object key using square bracket
 
-// COMPUTED PROPERTIES
+// COMPUTED PROPERTIES or dynamic key
+// example 1
+// const key = 'banana';
+// const bag = {};
+// bag[key] = 5;
+// console.log(bag);
+
+// example 2
+// const key = 'banana';
+// const bag = {
+// 	[key + 'Computers']: 5,
+// };
+// console.log(bag);
