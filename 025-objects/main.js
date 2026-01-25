@@ -27,3 +27,21 @@
 // 	[key + 'Computers']: 5,
 // };
 // console.log(bag);
+
+// PROPERTY VALUE SHORTHAND
+// function makeUser(name, age) {
+// 	return {
+// 		name: name,
+// 		age: age,
+// 	};
+// }
+
+// function makeUser(name, age) {
+// 	return {
+// 		name, // same as name: name
+// 		age, // same as age: age
+// 	};
+// }
+
+// const user = makeUser('Roaayala', 27);
+// console.log(user);
