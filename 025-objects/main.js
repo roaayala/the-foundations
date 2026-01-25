@@ -45,3 +45,10 @@
 
 // const user = makeUser('Roaayala', 27);
 // console.log(user);
+
+// PROPERTY NAMES LIMITATIOS
+
+// in operator
+
+// loop inside object using for in
+// if the key are using integer, than sorting descending automatically, if this behavior want to avoid then stringify the key
