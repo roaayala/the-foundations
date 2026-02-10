@@ -1,0 +1,48 @@
+body {
+	text-align: center;
+}
+
+form {
+	display: inline-block;
+	padding: 2rem;
+	border: 1px solid #999999;
+	border-radius: 1rem;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+label {
+	display: inline-block;
+	text-align: right;
+	min-width: 64px;
+}
+
+input,
+textarea {
+	font-size: 1rem;
+	font-family: inherit;
+	box-sizing: border-box;
+	border: 1px solid #999999;
+	width: 300px;
+}
+
+input:focus,
+textarea:focus {
+	outline-style: solid;
+	outline-color: black;
+}
+
+textarea {
+	vertical-align: top;
+	height: 5rem;
+}
+
+.button {
+	padding-left: 64px;
+}
+
+button {
+	margin-left: 0.5rem;
+}
