@@ -1,0 +1,21 @@
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+	font-family: inherit;
+	font-family: 1rem;
+	box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
