@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'hadwriting';
+	src:
+		url('./assets/journal.woff') format('woff'),
+		url('./assets/journal.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'typewriter';
+	src:
+		url('./assets/mom.woff') format('woff'),
+		url('./assets/mom.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+}
