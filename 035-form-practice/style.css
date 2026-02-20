@@ -80,6 +80,31 @@ body {
 	box-shadow: none;
 }
 
+/* radio */
+.legacy-form-row {
+	border: none;
+	margin-bottom: 4rem;
+}
+
+.legacy-form-row legend {
+	margin-bottom: 1.5rem;
+}
+
+.legacy-form-row .radio-label {
+	display: block;
+	font-size: 1.4rem;
+	padding: 0 2rem 0 1rem;
+}
+
+.legacy-form-row input[type='radio'] {
+	margin-top: 0.2rem;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+	float: left;
+}
+
 @media only screen and (min-width: 700px) {
 	/* header */
 	.speaker-form-header,
@@ -106,5 +131,20 @@ body {
 	.form-row input[type='email'] {
 		width: 25rem;
 		height: initial;
+	}
+
+	/* radio */
+	.legacy-form-row {
+		margin-bottom: 1rem;
+	}
+
+	.legacy-form-row legend {
+		width: 12rem;
+		text-align: right;
+		padding-right: 2rem;
+	}
+
+	.legacy-form-row legend {
+		float: left;
 	}
 }
