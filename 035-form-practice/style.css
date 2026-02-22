@@ -110,7 +110,25 @@ body {
 	width: 100%;
 	padding: 0.5rem;
 	font-size: 1.4rem;
-	-webkit-appearance: none;
+}
+
+/* textarea */
+.form-row textarea {
+	font-family: inherit;
+	font-size: 1.4rem;
+	border: 1px solid #d6d9dc;
+	border-radius: 3px;
+
+	min-height: 20rem;
+	margin-bottom: 1rem;
+	padding: 0.7rem;
+	resize: none;
+}
+
+.form-row .instructions {
+	color: #999;
+	font-size: 1.4rem;
+	margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -136,7 +154,9 @@ body {
 	}
 
 	.form-row input[type='text'],
-	.form-row input[type='email'] {
+	.form-row input[type='email'],
+	.form-row select,
+	.form-row textarea {
 		width: 25rem;
 		height: initial;
 	}
@@ -154,5 +174,10 @@ body {
 
 	.legacy-form-row legend {
 		float: left;
+	}
+
+	/* textarea */
+	.form-row .instructions {
+		margin-left: 14rem;
 	}
 }
